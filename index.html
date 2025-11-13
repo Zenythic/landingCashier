@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Online - Únete a Nuestro Equipo</title>
+    <meta name="description" content="Importante empresa del sector de juegos online abre sus vacantes para recibir nuevos cajeros">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./assets/css/main.css" as="style">
+    <link rel="preload" href="./assets/js/main.js" as="script">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Only Message -->
+    <div class="desktop-warning" id="desktop-warning">
+        <div class="warning-content">
+            <div class="warning-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h2>Solo disponible desde móviles</h2>
+            <p>Esta experiencia está optimizada exclusivamente para dispositivos móviles.</p>
+            <p>Por favor, accedé desde tu celular para disfrutar la experiencia completa.</p>
+        </div>
+    </div>
+    <!-- Navigation Arrows -->
+    <div class="nav-arrows">
+        <!-- Main navigation arrow (changes direction per section) -->
+        <button class="nav-arrow nav-arrow-main" id="nav-main">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        
+        <!-- Back arrow (always visible except on first section) -->
+        <button class="nav-arrow nav-arrow-back" id="nav-back" style="display: none;">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+    </div>
+
+
+    <!-- Main Container -->
+    <main class="main-container" id="main-container">
+        
+        <!-- Section 1: Hero -->
+        <section class="section active" id="hero" data-bg="hero">
+            <div class="particles-bg" id="particles-hero"></div>
+            <div class="section-content">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Importante empresa del sector</span>
+                        <span class="title-line highlight">JUEGOS ONLINE</span>
+                        <span class="title-line">abre sus vacantes para recibir</span>
+                        <span class="title-line accent">NUEVOS CAJEROS</span>
+                    </h1>
+                    <p class="hero-subtitle">Hemos creado esta experiencia para ti</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" data-next-section="1">
+                            <span>Comenzar Recorrido</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Platform -->
+        <section class="section" id="platform" data-bg="platform">
+            <div class="particles-bg" id="particles-platform"></div>
+            <div class="section-content">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 content-text">
+                        <h2 class="section-title">
+                            <span class="title-accent">Plataforma de la puta madre</span>
+                            <span>moderna y competitiva</span>
+                        </h2>
+                        <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3>Diseño moderno y 100% adaptable</h3>
+                                            <p>Interfaz que se adapta a cualquier dispositivo, una masa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-user-check"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3>Experiencia de usuario de lujo</h3>
+                                            <p>Diseñada pensando en tu comodidad, todo joya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3>Velocidad de carga bárbara</h3>
+                                            <p>Tecnología de última generación, vuela todo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-gamepad"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3>Variedad con +8 proveedores y +7500 juegos</h3>
+                                            <p>La selección más grosa de entretenimiento online</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="3"></button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6 content-visual">
+                        <div class="platform-mockup">
+                            <div class="mockup-screen">
+                                <div class="mockup-header">
+                                    <div class="mockup-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="stats-grid">
+                                        <div class="stat-card">
+                                            <span class="stat-number">7500+</span>
+                                            <span class="stat-label">Juegos</span>
+                                        </div>
+                                        <div class="stat-card">
+                                            <span class="stat-number">8+</span>
+                                            <span class="stat-label">Proveedores</span>
+                                        </div>
+                                        <div class="stat-card">
+                                            <span class="stat-number">24/7</span>
+                                            <span class="stat-label">Soporte</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Workspace -->
+        <section class="section" id="workspace" data-bg="workspace">
+            <div class="particles-bg" id="particles-workspace"></div>
+            <div class="section-content">
+                <div class="content-centered">
+                    <h2 class="section-title">
+                        <span class="title-accent">Ambiente de laburo</span>
+                        <span>de primera</span>
+                    </h2>
+                    <div id="workspaceCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="workspace-card">
+                                    <div class="card-icon">
+                                        <i class="fas fa-desktop"></i>
+                                    </div>
+                                    <h3>Nada de paneles chotos y viejos</h3>
+                                    <p>Tecnología de vanguardia, todo de primera</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="workspace-card">
+                                    <div class="card-icon">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <h3>Control real y herramientas copadas</h3>
+                                    <p>Pensadas para que labures cómodo y eficiente</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="workspace-card">
+                                    <div class="card-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3>Info clara y fácil de usar</h3>
+                                    <p>Dashboards que se entienden al toque, todo en vivo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#workspaceCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#workspaceCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#workspaceCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Benefits -->
+        <section class="section" id="benefits" data-bg="benefits">
+            <div class="particles-bg" id="particles-benefits"></div>
+            <div class="section-content">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1 order-2 content-visual">
+                        <div class="benefits-visual">
+                            <div class="percentage-display">
+                                <span class="percentage-number">41%</span>
+                                <span class="percentage-label">con recupero</span>
+                                <small>(Ajustable según volumen)</small>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 content-text">
+                        <h2 class="section-title">
+                            <span>Ganás hasta un</span>
+                            <span class="title-accent">41% con recupero</span>
+                        </h2>
+                        <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-coins"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h3>Te damos las fichas gratis</h3>
+                                            <p>Capital inicial que pone la empresa, vos no ponés un mango</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h3>Pagos al cliente al toque</h3>
+                                            <p>Transacciones rápidas y confiables, sin vueltas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-headset"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h3>Soporte para pagos</h3>
+                                            <p>Te ayudamos 24/7, siempre hay alguien</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h3>Te pagamos todos los días</h3>
+                                            <p>Pagos regulares y transparentes, sin sorpresas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Apply -->
+        <section class="section" id="apply" data-bg="apply">
+            <div class="particles-bg" id="particles-apply"></div>
+            <div class="section-content">
+                <div class="content-centered">
+                    <h2 class="section-title">
+                        <span>Pocos</span>
+                        <span class="title-accent">requisitos</span>
+                    </h2>
+                    <p class="section-subtitle">Para aplicar es tan simple como enviar una lista corta de recaudos</p>
+                    <div class="apply-cta">
+                        <button class="btn btn-secondary" id="requirements-btn">
+                            <i class="fas fa-list-check"></i>
+                            <span>Ver lista de recaudos</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Requirements Modal -->
+                    <div class="modal" id="requirements-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Lista de Recaudos</h3>
+                                <button class="modal-close" id="modal-close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="requirements-list">
+                                    <div class="requirement-item">
+                                        <i class="fas fa-id-card"></i>
+                                        <span>DNI Vigente</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Red Social Activa</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Ser mayor de edad</span>
+                                    </div>
+                                    <div class="requirement-item">
+                                        <i class="fas fa-camera"></i>
+                                        <span>Verificaion Visual</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Rules -->
+        <section class="section" id="rules" data-bg="rules">
+            <div class="particles-bg" id="particles-rules"></div>
+            <div class="section-content">
+                <div class="content-wide">
+                    <h2 class="section-title">
+                        <span class="title-accent">Reglas claras</span>
+                        <span>y trato de diez</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Para mantener todo joya y que labures tranquilo, tenemos algunas reglas básicas.
+                        Son flexibles pero hay que cumplirlas, no es joda.
+                    </p>
+                    
+                    <div id="rulesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="rule-card" data-rule="autojugado">
+                                    <div class="rule-icon warning">
+                                        <i class="fas fa-ban"></i>
+                                    </div>
+                                    <h3>Nada de Autojugado</h3>
+                                    <button class="rule-btn">Ver detalles</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="rule-card" data-rule="transacciones">
+                                    <div class="rule-icon success">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <h3>Todo Digital, Nada de Efectivo</h3>
+                                    <button class="rule-btn">Ver detalles</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="rule-card" data-rule="fondos">
+                                    <div class="rule-icon danger">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3>Nada de Chorear Guita</h3>
+                                    <button class="rule-btn">Ver detalles</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="rule-card" data-rule="bonos">
+                                    <div class="rule-icon warning">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <h3>Bonos Sin Abuso</h3>
+                                    <button class="rule-btn">Ver detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#rulesCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#rulesCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#rulesCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#rulesCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Rule Modals -->
+                    <div class="modal" id="rule-autojugado-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Nada de Autojugado</h3>
+                                <button class="modal-close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>El autojugado está re prohibido. Nuestro sistema es re moderno y detecta al toque si estás jugando vos mismo.</p>
+                                <p>Si te agarramos haciendo esto, chau, ban inmediato y quedás en la lista negra para siempre.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal" id="rule-transacciones-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Todo Digital, Nada de Efectivo</h3>
+                                <button class="modal-close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Acá no manejamos efectivo, pero aceptamos un montón de formas de pago: cripto, billeteras virtuales, todo lo moderno.</p>
+                                <p>Todos los pagos van por nuestros canales oficiales, nada por izquierda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal" id="rule-fondos-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Nada de Chorear Guita</h3>
+                                <button class="modal-close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Para cada venta te damos todos los datos. Si te mandás alguna y desviás guita que no es tuya, chau, ban definitivo al toque.</p>
+                                <p>Y también quedás en la lista negra global, así que ni se te ocurra.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal" id="rule-bonos-modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Bonos Sin Abuso</h3>
+                                <button class="modal-close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>El sistema analiza todo y se da cuenta si estás abusando de los bonos y promos.</p>
+                                <p>Si te pescamos, podés comer una multa o directamente ban, depende de qué tan zarpado sea lo que hiciste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Final Apply -->
+        <section class="section" id="final-apply" data-bg="final-apply">
+            <div class="particles-bg" id="particles-final-apply"></div>
+            <div class="section-content">
+                <div class="content-centered">
+                    <h2 class="section-title">
+                        <span class="title-accent">¡Aplicá y arrancá</span>
+                        <span>ya mismo!</span>
+                    </h2>
+                    <p class="section-subtitle">Te revisamos la aplicación al toque, no te hacemos esperar</p>
+                    <div class="final-apply-cta">
+                        <button class="btn btn-primary btn-large" id="application-form-btn">
+                            <i class="fas fa-rocket"></i>
+                            <span>Aplicar ahora</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Application Form Modal -->
+                    <div class="modal" id="application-modal">
+                        <div class="modal-content application-modal">
+                            <div class="modal-header">
+                                <h3>Formulario de Aplicación</h3>
+                                <button class="modal-close" id="application-modal-close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="application-form" class="application-form">
+                                    <div class="form-group">
+                                        <label for="name">Nombre completo</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email">Correo electrónico</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="whatsapp">Número de WhatsApp</label>
+                                        <div class="phone-input">
+                                            <span class="country-flag">🇦🇷 +54</span>
+                                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="9 11 1234-5678" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="birthdate">Fecha de nacimiento</label>
+                                        <input type="date" id="birthdate" name="birthdate" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="experience">Experiencia como cajero</label>
+                                        <select id="experience" name="experience" required>
+                                            <option value="">Selecciona tu nivel</option>
+                                            <option value="nada">Nada</option>
+                                            <option value="mediana">Mediana</option>
+                                            <option value="mucha">Mucha</option>
+                                            <option value="experto">Soy un experto</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="has-clients">¿Tienes una base de clientes?</label>
+                                        <div class="radio-group">
+                                            <label class="radio-label">
+                                                <input type="radio" name="has-clients" value="si" id="has-clients-yes">
+                                                <span>Sí</span>
+                                            </label>
+                                            <label class="radio-label">
+                                                <input type="radio" name="has-clients" value="no" id="has-clients-no">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group" id="client-count-group" style="display: none;">
+                                        <label for="client-count">Aproximadamente cuántos clientes</label>
+                                        <select id="client-count" name="client-count">
+                                            <option value="">Selecciona cantidad</option>
+                                            <option value="menos-50">Menos de 50</option>
+                                            <option value="menos-100">Menos de 100</option>
+                                            <option value="menos-500">Menos de 500</option>
+                                            <option value="menos-1000">Menos de 1000</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="terms-read" name="terms-read" required>
+                                            <span>Confirmo haber leído y entendido la información previamente mostrada</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="interest-confirm" name="interest-confirm" required>
+                                            <span>Declaro estar plenamente interesado en el puesto, y entiendo que puedo ser baneado por spam</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-submit">
+                                        <button type="button" class="btn btn-primary btn-whatsapp" id="whatsapp-submit">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span>Completar proceso por WhatsApp</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-diamond"></i>
+            </div>
+            <div class="loading-text">Bienvenido</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts -->
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
