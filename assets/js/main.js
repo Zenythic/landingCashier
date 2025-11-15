@@ -515,7 +515,7 @@ class CasinoLanding {
     
     handleWhatsAppSubmit() {
         // Build WhatsApp message
-        const message = 'Hola, quiero ser cajero, mi nombre es: ;
+        const message = 'Hola, quiero ser cajero, mi nombre es: '
         const whatsappNumber = '+5493517512096';
         const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${message}`;
         
