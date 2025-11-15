@@ -514,42 +514,10 @@ class CasinoLanding {
     }
     
     handleWhatsAppSubmit() {
-        const form = document.getElementById('application-form');
-        const formData = new FormData(form);
-        
-        // Validate required fields
-        const requiredFields = ['name', 'email', 'whatsapp', 'birthdate', 'experience'];
-        const checkboxes = ['terms-read', 'interest-confirm'];
-        
-        let isValid = true;
-        let missingFields = [];
-        
-        // Check required fields
-        requiredFields.forEach(field => {
-            const value = formData.get(field);
-            if (!value || value.trim() === '') {
-                isValid = false;
-                missingFields.push(field);
-            }
-        });
-        
-        // Check checkboxes
-        checkboxes.forEach(checkbox => {
-            if (!formData.get(checkbox)) {
-                isValid = false;
-                missingFields.push(checkbox);
-            }
-        });
-        
-        if (!isValid) {
-            this.showNotification('Por favor completa todos los campos requeridos', 'error');
-            return;
-        }
-        
         // Build WhatsApp message
-        const message = this.buildWhatsAppMessage(formData);
+        const message = 'Hola, quiero ser cajero, mi nombre es: ;
         const whatsappNumber = '+5493517512096';
-        const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${message}`;
         
         // Open WhatsApp
         window.open(whatsappUrl, '_blank');
