@@ -106,106 +106,14 @@
                     </h2>
                     <p class="section-subtitle">Te revisamos la aplicación al toque, no te hacemos esperar</p>
                     <div class="final-apply-cta">
-                        <button class="btn btn-primary btn-large" id="application-form-btn">
-                            <i class="fas fa-rocket"></i>
-                            <span>Aplicar ahora</span>
+                        <button type="button" class="btn btn-primary btn-whatsapp" id="whatsapp-submit" onclick="fbq('trackCustom', 'ClickWhatsApp');">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Completar proceso por WhatsApp</span>
                         </button>
                     </div>
                     
                     <!-- Application Form Modal -->
-                    <div class="modal" id="application-modal">
-                        <div class="modal-content application-modal">
-                            <div class="modal-header">
-                                <h3>Formulario de Aplicación</h3>
-                                <button class="modal-close" id="application-modal-close">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="application-form" class="application-form">
-                                    <div class="form-group">
-                                        <label for="name">Nombre completo</label>
-                                        <input type="text" id="name" name="name" required>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="email">Correo electrónico</label>
-                                        <input type="email" id="email" name="email" required>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="whatsapp">Número de WhatsApp</label>
-                                        <div class="phone-input">
-                                            <span class="country-flag">🇦🇷 +54</span>
-                                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="9 11 1234-5678" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="birthdate">Fecha de nacimiento</label>
-                                        <input type="date" id="birthdate" name="birthdate" required>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="experience">Experiencia como cajero</label>
-                                        <select id="experience" name="experience" required>
-                                            <option value="">Selecciona tu nivel</option>
-                                            <option value="nada">Nada</option>
-                                            <option value="mediana">Mediana</option>
-                                            <option value="mucha">Mucha</option>
-                                            <option value="experto">Soy un experto</option>
-                                        </select>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="has-clients">¿Tienes una base de clientes?</label>
-                                        <div class="radio-group">
-                                            <label class="radio-label">
-                                                <input type="radio" name="has-clients" value="si" id="has-clients-yes">
-                                                <span>Sí</span>
-                                            </label>
-                                            <label class="radio-label">
-                                                <input type="radio" name="has-clients" value="no" id="has-clients-no">
-                                                <span>No</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group" id="client-count-group" style="display: none;">
-                                        <label for="client-count">Aproximadamente cuántos clientes</label>
-                                        <select id="client-count" name="client-count">
-                                            <option value="">Selecciona cantidad</option>
-                                            <option value="menos-50">Menos de 50</option>
-                                            <option value="menos-100">Menos de 100</option>
-                                            <option value="menos-500">Menos de 500</option>
-                                            <option value="menos-1000">Menos de 1000</option>
-                                        </select>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="checkbox-label">
-                                            <input type="checkbox" id="terms-read" name="terms-read" required>
-                                            <span>Confirmo haber leído y entendido la información previamente mostrada</span>
-                                        </label>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="checkbox-label">
-                                            <input type="checkbox" id="interest-confirm" name="interest-confirm" required>
-                                            <span>Declaro estar plenamente interesado en el puesto, y entiendo que puedo ser baneado por spam</span>
-                                        </label>
-                                    </div>
-                                    
-                                    <div class="form-submit">
-                                        <button type="button" class="btn btn-primary btn-whatsapp" id="whatsapp-submit" onclick="fbq('trackCustom', 'ClickWhatsApp');">
-                                            <i class="fab fa-whatsapp"></i>
-                                            <span>Completar proceso por WhatsApp</span>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
